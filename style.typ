@@ -119,7 +119,9 @@
     el.supplement
   }
   // 目录标题
-  set outline(title: text("目录", size: heading-size.at(0)))
+  set outline(title: block(width: 100%)[
+    #align(center, text("目录", size: heading-size.at(0)))
+  ])
 
   // 目录条目
   show outline.entry.where(level: 1): set text(weight: "bold")

@@ -100,7 +100,7 @@
   show table: set text(size: 字号.五号)
 
   // 行距和段间距
-  set par(leading: 0.65em, spacing: 1.2em)
+  set par(leading: 0.65em, spacing: 1.2em, justify: true)
   show outline.entry: set block(above: 0.65em / 2)
 
   // 标题

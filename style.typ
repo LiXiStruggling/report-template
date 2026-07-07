@@ -127,9 +127,9 @@
   show outline.entry.where(level: 1): set text(weight: "bold")
 
   // 线
-  set line(stroke: 0.6pt)
+  set line(stroke: 0.05em)
   // 下划线
-  set underline(stroke: 0.6pt, offset: 0.2em)
+  set underline(stroke: 0.05em, offset: 0.2em)
 
   // figure
   // 设置表格的 caption 在其上方显示
@@ -140,7 +140,7 @@
 
   // 表格
   set table(stroke: (x, y) => (
-    top: if y == 0 { 0.08em } else if y == 1 { 0.05em } else { 0pt },
+    top: if y == 0 { 0.08em } else if y == 1 { 0.05em } else { 0em },
     bottom: 0.08em,
   ))
 
@@ -174,7 +174,7 @@
 
 // 取消缩进快捷函数
 #let noindent(it) = {
-  indent-scope(it, amount: 0pt)
+  indent-scope(it, amount: 0em)
 }
 
 // 设置正文样式
